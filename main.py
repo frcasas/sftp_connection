@@ -1,7 +1,7 @@
 from sftp_connection.sftp_functions import SFTPFunctions
 
 
-def get_files_sftp(sf: SFTPFunctions):
+def call_sftp_functions(sf: SFTPFunctions):
     sf.connect()
     sf.put("meuarquivo.txt", "/remoto/meuarquivo.txt")
     sf.get("/remoto/meuarquivo.txt", "baixado.txt")
@@ -10,4 +10,4 @@ def get_files_sftp(sf: SFTPFunctions):
 
 if __name__ == '__main__':
     sftp = SFTPFunctions()
-    get_files_sftp(sftp)
+    call_sftp_functions(sftp)
