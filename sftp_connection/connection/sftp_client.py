@@ -11,7 +11,7 @@ class SFTPClient(SFTPInterface):
         load_dotenv()
         self.hostname = os.getenv('SMTP_HOST')
         self.username = os.getenv('SMTP_USER')
-        self.password = os.getenv('SMTP_USER')
+        self.password = os.getenv('SMTP_PASSWORD')
         self.port = os.getenv('SMTP_PORT')
         self.connection = None
 
