@@ -1,2 +1,5 @@
+setuptools==75.8.0
+wheel
+twine
 python-dotenv==1.0.1
 pysftp==0.2.9
