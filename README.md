@@ -6,7 +6,16 @@ Módulo para auxiliar as funções que exige conexão SFTP, podendo usar o mock 
 * Adicionar no arquivo requirements.txt a linha
   * `sftp_connection @ git+https://github.com/frcasas/sftp_connection@main`
 * Adicionar no arquivo .env a linha
-  * `USE_MOCK=` 0 para inativo, 1 para ativo
+  ```
+  --MOCK CONFIG
+  USE_MOCK=<config-usage-moki__0-inactive_1-active>
+  
+  --SMTP CONFIG
+  SMTP_HOST=<your-smtp-host>
+  SMTP_PORT=<your-smtp-port>
+  SMTP_USER=<your-smtp-user>
+  SMTP_PASSWORD=<your-smtp-password>
+    ```
 
 ### Como usar
 Instanciar a classe SFTPFunctions
