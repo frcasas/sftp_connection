@@ -19,7 +19,7 @@ class SFTPClient(SFTPInterface):
         cnopts = pysftp.CnOpts()
         cnopts.hostkeys = None  # Para ignorar verificação de chave (uso em testes)
         self.connection = pysftp.Connection(
-            host=self.hostname, username=self.username, password=self.password, port=self.port, cnopts=cnopts
+            host=self.hostname, username=self.username, password=self.password, port=int(self.port), cnopts=cnopts
         )
         print("✅ Conectado ao SFTP!")
 
